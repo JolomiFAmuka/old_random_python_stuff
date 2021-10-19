@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>Thanks for registering! {{first}} {{last}}</h1>
+    {% if namelen <= 4 %}
+        <h3>Your First name, {{first}} is short; actually {{namelen}} characters</h3>
+    {% endif %}
+{% endblock content %}

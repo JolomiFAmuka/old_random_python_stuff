@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome!! To our site homepage</h1>
+    {% for post in posts  %}
+        <p><h4>Author: {{post.author}}</h4></p>
+        <p><h4>A book called {{post.title}}, published on {{post.date_posted}} </h4></p>
+        <p><h4>Content: {{post.content}} </h4></p>
+    {% endfor %}
+{% endblock content %}

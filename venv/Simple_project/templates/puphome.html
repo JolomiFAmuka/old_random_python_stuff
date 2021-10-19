@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to Puppy World!!</h1>
+    <img src="{{ url_for('static', filename='puppy.jfif') }}" alt="">
+    <!-- <a href="{{ url_for('static', filename='puppy.jfif') }}"></a> -->
+    <p><h3>Go to <em>/puppy/name</em> to search the pet records</h3></p>
+{% endblock content %}

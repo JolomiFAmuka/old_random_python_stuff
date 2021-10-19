@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello!!! {{my_var}}</h1>
+  <p><ul>
+    {%for item in letters%}
+    <li><h2>{{item}}</h2></li>
+    {%endfor%}
+  </ul></p>
+  <p><h1>{{pup_dict["name"]}}</h1></p>
+
+  {% if "maxumillian" in puppies %}
+    <p><h3><em>Found you here Sparky</em></h3></p>
+  {% else %}
+    <p><h3>Hmm...name not on the list</h3></p>
+  {% endif %}
+
+  
+  {% if user_logged_in %}
+    <p>
+      <h3>Welcome!! You are logged in</h3>
+    </p>
+  {% else %}
+    <p>
+      <h3>Please Log in</h3>
+    </p>
+  {% endif %}
+
+</body>
+</html>

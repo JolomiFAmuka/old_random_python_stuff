@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Registration Page!!!</h1>
+    <form action="{{ url_for('thankspage') }}">
+        <label for="first">First Name</label>
+        <input type="text" name="first">
+        <label for="last">Last Name</label>
+        <input type="text" name="last">
+        <input type="submit" value="Submit">
+    </form>
+{% endblock content %}
